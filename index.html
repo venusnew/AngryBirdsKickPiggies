@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Angry Birds Kick Piggies</title>
+  <script src="ruffle.js"></script> <!-- Ruta de Ruffle -->
+</head>
+<body>
+  <h1>Angry Birds Kick Piggies</h1>
+  <div id="flash-game-container" style="width: 800px; height: 600px;"></div>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    document.getElementById("flash-game-container").appendChild(player);
+    player.load("angry_birds_kick_piggies_by_venuskawaiigames-d9rfd4d.swf"); // Ruta del archivo SWF
+  </script>
+</body>
+</html>
